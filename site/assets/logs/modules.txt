@@ -1,0 +1,4 @@
+2023-11-07 17:14:03	guest	http://localhost/processwiretest/http404/	Installed module 'ProcessRecentPages'
+2023-11-07 17:14:03	guest	http://localhost/processwiretest/http404/	Installed module 'AdminThemeUikit'
+2023-11-07 17:14:12	guest	http://localhost/processwiretest/	Installed module 'ProcessLogger'
+2023-11-07 17:14:12	guest	http://localhost/processwiretest/	Installed module 'InputfieldIcon'
