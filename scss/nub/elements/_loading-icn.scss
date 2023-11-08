@@ -1,0 +1,41 @@
+/* Animated loading icon using Font Awesome */
+
+.icn-load {
+	position: relative;
+	height: 10rem;
+	width: 10rem;
+	font-size: 10rem;
+
+	&:before {
+		@extend %fa-icon;
+		@extend .far;
+		content: fa-content($fa-var-circle);
+		color: $line-grey;
+
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		font-size: inherit;
+		z-index: 1;
+	}
+
+	&:after {
+		@extend %fa-icon;
+		@extend .far;
+		content: fa-content($fa-var-spinner-third);
+		color: $color1;
+
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		font-size: inherit;
+		z-index: 2;
+		animation: spin 1.5s infinite linear;
+	}
+}
+
+// Spin animation
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}

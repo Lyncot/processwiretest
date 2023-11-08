@@ -1,0 +1,73 @@
+/* Exhibition Gallery Modal */
+
+#exhibition {
+	display: none;
+	background: rgba($black,0.85);
+	position: fixed;
+	z-index: 200;
+	top: 0px;
+	padding: 5rem 1rem;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+
+	img {
+		height: auto;
+		width: auto;
+		max-width: 90%;
+	}
+
+	.exb-inner {
+		position: relative;
+		display: inline-block;
+	}
+
+	.exb-close {
+		background-color: $bg_color;
+		border-radius: 50rem;
+		padding: 0.5rem;
+		position: absolute;
+		top: -1rem;
+		right: -0.5rem;
+		color: $white;
+		font-size: 2rem;
+	}
+
+	.exb-text {
+		padding: 1rem;
+		background: rgba($white, 1);
+		color: $black;
+		width: 90%;
+		margin: 0 5%;
+	}
+
+	@media only screen and (min-width: $break-large) {
+		padding: 5rem;
+
+		img {
+			height: 80vh;
+			width: auto;
+			max-width: 90vw;
+		}
+
+		.exb-close {
+			top: 0px;
+			right: -4rem;
+			font-size: 2.5rem;
+		}
+
+		.exb-text {
+			position: absolute;
+			padding: 1.5rem;
+			background: rgba($bg_color, 1);
+			color: $white;
+			font-size: 1.1rem;
+			font-style: italic;
+			max-width: 300px;
+			height: auto;
+			top: 50%;
+			right: -150px;
+		}
+	}
+}

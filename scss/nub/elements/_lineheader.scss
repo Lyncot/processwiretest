@@ -1,0 +1,21 @@
+/* Line Header Styling */
+
+@media #{$medium-up} {
+	.line-header {
+	    display: table;
+	    padding: 1rem 0;
+	    white-space: nowrap;
+	    overflow: hidden;
+
+	    &:before, &:after {
+	      border-top: 1px solid #bbb;
+	      content: '';
+	      display: table-cell;
+	      position: relative;
+	      top: 0.5em;
+	      width: 45%;
+	    }
+	    &:before { right: 1.5%; }
+	    &:after { left: 1.5%; }
+	}
+}

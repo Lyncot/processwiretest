@@ -1,0 +1,15 @@
+/* Sleek Tagline Styling */
+
+.sleek {
+	.tagline {
+		h1 {
+			font-weight: 900;
+
+			@media #{$large-up} {
+				max-width: 30vw;
+				margin: 0 auto;
+				font-size: 3rem;
+			}
+		}
+	}
+}

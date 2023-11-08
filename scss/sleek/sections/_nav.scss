@@ -1,0 +1,42 @@
+/* Sleek Nav Styling */
+
+.sleek {
+	nav {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: left;
+		width: 100%;
+		color: $white;
+
+		.item {
+			padding: 3rem 0;
+			font-size: 0.95rem;
+			flex: 1 1 auto;
+			color: lighten($color-light, 10%);
+			text-transform: uppercase;
+			letter-spacing: 0.15rem;
+			transition: color 500ms ease-in-out;
+
+			&:hover {
+				color: $white;
+			}
+		}
+
+		#logo {
+
+			img {
+				display: inline;
+				width: 4.5rem;
+				height: auto;
+				float: left;
+			}
+
+			color: $white;
+			font-size: 3rem;
+			font-weight: 500;
+			text-transform: uppercase;
+			letter-spacing: 0.3rem;
+		}
+	}
+}

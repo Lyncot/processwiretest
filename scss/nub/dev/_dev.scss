@@ -1,0 +1,58 @@
+// Dev Styling
+
+$dev-pink: #e223b3;
+
+.dev-uf {
+	color: $dev-pink;
+
+	a {
+		color: $dev-pink;
+	}
+}
+
+.dev-styles {
+	.cell {
+		outline: 1px dotted pink;
+	}
+
+	.nav-menu > li {
+		outline: 1px dotted pink;
+	}
+}
+
+.dev-box {
+	border: 3px solid $devpink;
+	background-color: $white;
+	padding: 1.5rem;
+	min-width: 300px;
+	position: fixed;
+	bottom: 2rem;
+	left: 2rem;
+
+	h1, h2, h3, h4 {
+		color: $devpink;
+	}
+}
+
+.dev-errors {
+	background-color: $white;
+	border: 2px solid $devpink;
+	padding: 2rem;
+	z-index: 100;
+	top: 10vh;
+	max-height: 80vh;
+	width: 50vw;
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+}
+
+.dumpy {
+	border: 3px solid $devpink;
+	background-color: lighten($devpink, 47%);
+	padding: 2rem;
+	width: 90vw;
+	margin: 1rem 5vw;
+	max-height: 50vh;
+	overflow: scroll;
+}

@@ -1,0 +1,24 @@
+/* Service Grid Styling */
+
+.service-grid {
+	.cell {
+		margin-bottom: 1rem;
+		
+		h2, h3, h4, p {
+			color: initial;
+		}
+
+		span {
+			color: $color1;
+			opacity: 0;
+		}
+
+		&:hover {
+			span {
+				-webkit-animation: slide-in-blurred-bottom 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	            animation: slide-in-blurred-bottom 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+				opacity: 1;				
+			}
+		}
+	}
+}

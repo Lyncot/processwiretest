@@ -1,0 +1,27 @@
+/* Base Styling */
+
+* {
+	font-family: $font-main;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	outline: none;
+}
+
+html {
+
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+// Stops page from scrolling
+.noscroll {
+	overflow: hidden;
+}
+
+// Calls to Action
+.cta {
+	
+}

@@ -1,0 +1,19 @@
+/* Image Styling */
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+// Fit an image to cover an area
+.imgfit {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.imgContain {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}

@@ -1,0 +1,248 @@
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 350px 7fr 1.5fr;
+  grid-gap: 1rem;
+
+  > div {
+  	min-height: 100vh;
+  }
+
+  .main-pane {
+  	padding-bottom: 100vh;
+  }
+
+  .nub-menu {
+  	top: 2rem;
+  }
+}
+
+ol {
+	color: $textcolor;
+	font-size: 1.05rem;
+	letter-spacing: 0.05rem;
+	line-height: 2rem;
+	font-weight: 300;
+	margin-bottom: 1rem;
+
+	li {
+
+	}
+}
+
+.resources {
+	background-color: #efefef;
+	box-shadow: inset 5px 0px 10px darken(#efefef, 5%);
+
+	.box {
+		background-color: $white;
+		border-radius: 5px;
+		padding: 2rem;
+		box-shadow: 0px 5px 10px darken(#efefef, 5%);
+		margin: 2rem 0;
+
+		.fal, .fab {
+			font-size: 2rem;
+		}
+
+		a {
+			color: $devpink;
+		}
+	}
+}
+
+.menu {
+	background: $grey-bg;
+}
+
+.code { 
+	max-height: 500px;
+	overflow: scroll;
+	max-width: 60vw;
+
+	& pre {
+		border-radius: 0;
+	}
+
+	::selection {
+		background-color: $devpink;
+		color: $white;
+	}
+}
+
+.status {
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+
+	&.status-ready {
+		background: $ready;
+		color: $white;
+	}
+	&.status-in-progress {
+		background: $wip;
+		color: $black;
+	}
+	&.status-needed {
+		background: $needed;
+		color: $white;
+	}
+	&.status-bugs {
+		background: $buggy;
+		color: $white;
+	}
+}
+
+.carousel {
+	width: 100%;
+}
+
+// Code Examples
+.example {
+	padding: 2rem;
+	border: 1px solid $line-grey;
+	margin: 2rem 0;
+}
+
+.codezone {
+	background-color: #444446;
+	color: $white;
+
+	p {
+		color: inherit;
+	}
+}
+
+.codePreview {
+	color: $black;
+	background-color: #efefef;
+	box-shadow: inset 0px 5px 5px darken(#efefef,5%);
+	margin: 0.3rem 0;
+	padding: 1.5rem;
+	max-width: 60vw;
+
+	// & > * {
+	// 	background-color: $white;
+	// 	outline: 1px solid $line-grey;
+	// 	padding: 2rem;
+	// }
+}
+
+// Text Styling
+
+.class {
+	display: inline;
+	padding: 0.25rem 0.25rem;
+	background-color: #272822;
+	color: #e6db74;
+
+	&:before, &:after {
+		content: "\"";
+		color: $white;
+	}
+}
+
+// Comments 
+.comments {
+	background-color: $grey-bg;
+	padding: 2rem;
+
+	.comment {
+		background-color: $white;
+		margin-bottom: 1rem;
+		padding: 1rem;
+		box-shadow: 0px 3px 10px darken($grey-bg, 10%);
+	}
+}
+
+// Side Menu Styling
+
+.side-menu {
+	@extend %delist;
+	padding-bottom: 1rem;
+
+	h3 {
+		font-size: 1rem;
+		padding: 1rem 0;
+		margin: 0;
+	}
+
+	li {
+		padding-left: 1rem;
+
+		a {
+			color: #222;
+		}
+	}
+}
+
+// Development Status Key
+.dev-key {
+	background-color: $white;
+	padding: 1rem;
+	margin-top: 2rem;
+	font-size: 0.9rem;
+
+	ul {
+		@extend %delist;
+		li {
+			font-size: 0.9rem;
+		}
+	}
+}
+
+// Mini status icons for side menu
+.mini-status {
+	display: inline-block;
+	background-color: #555;
+	border-radius: 5rem;
+	width: 0.8rem;
+	height: 0.8rem;
+	margin-right: 0.5rem;
+
+	&.status-ready {
+		background-color: $ready;
+	}
+
+	&.status-dev {
+		background-color: $wip;
+	}
+
+	&.status-needed {
+		background-color: $needed;
+	}
+
+	&.status-buggy {
+		background-color: $buggy;
+	}
+}
+
+// Code block styling
+code {
+	background-color: #ccc;
+	padding: 0.2rem 0.5rem;
+}
+
+// Temporary development documentation
+.temp {
+	position: relative;
+	background-color: #ffad2b;
+
+	&::before {
+		content: "This is a temporary whilst under development and will change.";
+		position: absolute;
+		display: none;
+		bottom: 100%;
+		left: -200px;
+		padding: 1rem;
+		background-color: rgba(#ffad2b, 0.9);
+		box-sizing: border-box;
+		text-align: center;
+		width: 400px;
+	}
+
+	&:hover {
+		&::before {
+			display: block;
+		}
+	}
+}

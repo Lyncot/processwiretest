@@ -1,0 +1,36 @@
+// Accordion Styling
+
+.accordion {
+	@extend %delist;
+
+	> li {
+		position: relative;
+		& > a {
+			display: block;
+			&:after {
+				position: absolute;
+				right: 0px;
+				top: 0px;
+				font-size: 1.5rem;
+				padding: 0rem 1rem;
+				@extend %fa-icon;
+				@extend .fal;
+				content: fa-content($fa-var-angle-down);
+			}
+		}
+
+		& > a.active {
+			&:after {
+				content: fa-content($fa-var-angle-up);
+			}
+		}
+	}
+
+	ul.nested {
+		display: none;
+		
+		&.open {
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+// Font Main
+
+$font-main: 'Poppins', sans-serif;
+
+// Color Variables
+
+$color1: #48af57;
+//$color2: ;
+//$color3: ;
+//$color4: ;
+
+$color1dark: darken(#48af57, 10%);
+
+// Call to Action Colour
+$cta-color: $color1;
+$cta-text: $color1;
+
+$white: #fff;
+$line-grey: #ddd;
+$light_text: #999999;
+$blank-panel: #F4F8F9;
+$grey-bg: #f2f4f7;
+$dark-bg: #606670;
+$black: #000000;
+$textcolor: #555;
+$color-close: #a81212;
+
+// Element Colours
+$selected: $cta-color;
+$selectedtext: $white;
+
+// Development Colours
+$devpink: #e223b3;
+
+/* Error Scheme */
+$error-bg: #ffecec;
+$error-text: #bb1b1b;
+
+// Header Config
+$headersize: 80px;
+$headersize-small: 60px;
+$headersize-scroll: 80px;

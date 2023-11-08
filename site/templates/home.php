@@ -11,5 +11,5 @@
 ?>
 
 <div id="content">
-	Homepage content 
+	Hello
 </div>	

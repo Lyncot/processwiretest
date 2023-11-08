@@ -1,0 +1,42 @@
+/* Font Page */
+
+.fonts-page {
+
+	.font-display {
+
+		margin: 3rem 0;
+
+		h2 {
+			font-size: 4rem;
+			line-height: 4rem;
+			padding: 0;
+			margin: 0;
+		}
+
+		p.font-example {
+			font-size: 2.5rem;
+			line-height: 2rem;
+			font-weight: 300;
+		}
+
+		p {
+			font-weight: 300;
+			font-size: 1.2rem;
+
+			strong {
+				font-weight: 700;
+			}
+
+			&.italic {
+				font-style: italic;
+			}
+		}
+
+		.glyph {
+			border: 1px solid $line-grey;
+			padding: 1rem;
+			font-size: 5vw;	
+		}
+
+	}
+}

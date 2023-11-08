@@ -1,0 +1,54 @@
+/* Gallery Styling */
+
+.gallery {
+	@extend %delist;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5rem 0 0 0;
+	height: 80vh;
+
+	.column {
+		flex: 1 1 100%;
+
+		.subflex {
+			height: 100%;
+			display: flex;
+
+			.fleximent {
+				position: relative;
+				flex: 1 1 50%;
+				margin: 0 1rem 1rem 0;
+
+				img {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+
+				.full {
+					flex: 1 1 100%;
+				}
+
+				&:last-of-type {
+					margin-right: 0;
+				}
+			}
+			
+		}
+	}
+
+	@media #{$large-up} {
+		.column {
+			flex: 0 1 50%;
+
+			.subflex {
+				flex-direction: column;
+
+				.fleximent {
+					margin: 0 0 1rem 1rem;
+				}
+			}
+		}
+	}
+}

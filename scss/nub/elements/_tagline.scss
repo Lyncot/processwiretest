@@ -1,0 +1,15 @@
+/* Tagline Styling */
+
+.tagline {
+	padding: 2rem 0;
+	margin: 0 auto;
+	font-size: 2rem;
+	letter-spacing: 0.05rem;
+	text-align: center;
+
+	@media #{$large-up} {
+		padding: 5rem 0;
+		font-size: 4rem;
+		max-width: 50vw;
+	}
+}

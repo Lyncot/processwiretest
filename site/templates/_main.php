@@ -17,12 +17,12 @@ $home = $pages->get('/'); /** @var HomePage $home */
 ?><!DOCTYPE html>
 <html lang="en">
 	<head id="html-head">
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<?php include_once('inc/global.php'); ?>
 		<title><?php echo $page->title; ?></title>
-		<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->templates; ?>styles/main.css" />
-		<script src="<?php echo $config->urls->templates; ?>scripts/main.js"></script>
 	</head>
 	<body id="html-body">
+
+		<?php include_once('inc/header.php'); ?>
 
 		<p id="topnav">
 			<?php echo $home->and($home->children)->implode(" / ", "<a href='{url}'>{title}</a>"); ?>
@@ -50,6 +50,9 @@ $home = $pages->get('/'); /** @var HomePage $home */
 		<?php if($page->editable()): ?>
 		<p><a href='<?php echo $page->editUrl(); ?>'>Edit this page</a></p>
 		<?php endif; ?>
-	
+
+		<?php include_once('inc/footer.php'); ?>
+		<?php include_once('inc/bottomscript.php'); ?>
+		
 	</body>
 </html>

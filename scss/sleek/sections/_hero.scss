@@ -1,0 +1,17 @@
+/* Sleek Hero Styling */
+
+.hero {
+	display: block;
+	color: $white;
+
+	.hero-tagline {
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		align-content: center;
+
+		h2 {
+			flex: 0 1 auto;
+		}
+	}
+}

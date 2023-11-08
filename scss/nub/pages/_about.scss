@@ -1,0 +1,41 @@
+// About Page Styles
+
+.about {
+	@media #{$large-up} {
+		height: 1000px;
+	}
+
+	.about-bg {
+		background: url('../img/backgrounds/business-bg.jpg') center center no-repeat;
+	    background-size: cover;
+	    height: 300px;
+
+	    @media #{$medium-only} {
+			width: 100%;
+	    }
+
+	    @media #{$large-up} {
+			height: 1000px;
+		}
+	}
+
+	.medium-12 {
+		@media #{$medium-only} {
+			width: 100%;
+	    }
+	}
+
+	.about-text {
+		background: $white;
+		position: relative;
+		z-index: 1;
+		margin: -2rem 5% 2rem;
+		padding: 2rem;
+
+		@media #{$large-up} {
+			margin: 0;
+	    	padding: 4rem;
+		    transform: translateX(-20%);
+		}
+	}
+}

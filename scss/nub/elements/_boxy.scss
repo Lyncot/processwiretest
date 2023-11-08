@@ -1,0 +1,18 @@
+/* Boxy Stylesheet
+Boxy is the cutest little responsive square */
+
+.boxy {
+	position: relative;
+
+	> div {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		padding-bottom: 100%;
+	}
+}

@@ -1,0 +1,37 @@
+/* Unique Selling Points Styling */
+
+.usp {
+	background: url(../img/stock/responsive-design.jpg);
+
+	ul {
+		margin: 0;
+		background: transparentize($white, .1);
+
+		h2 {
+			@media #{$small-only} {
+				text-align: center;
+			}			
+		}
+
+		li {
+			list-style: none;
+			font-size: 1.4rem;
+			padding: 0.5rem 0;
+
+			@media #{$small-only} {
+				text-align: center;
+				font-size: 1.1rem;
+			}
+
+			i {
+				color: $color1;
+				vertical-align: -0.02rem;
+
+				@media #{$small-only} {
+					display: block;
+					margin-bottom: 1rem;
+				}
+			}
+		}
+	}
+}

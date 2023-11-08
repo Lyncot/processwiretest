@@ -1,0 +1,9 @@
+/* Sleek Header Styling */
+
+.sleek {
+	header {
+		min-height: 60vh;
+		background: linear-gradient(191deg, $color-dark 0%, rgba(178,234,159,1) 80%);
+		box-shadow: none;
+	}
+}

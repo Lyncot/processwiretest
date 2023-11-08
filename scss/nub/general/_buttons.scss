@@ -1,0 +1,30 @@
+/* Button Styling */
+
+.button {
+	display: block;
+	letter-spacing: 0.1rem;
+	padding: 1rem 2rem;
+	margin: 0 auto;
+	max-width: 100%;
+	text-align: center;
+	color: $white;
+	font-size: 1rem;
+
+	@media #{$medium-up} {
+		max-width: -webkit-fit-content;
+		max-width: -moz-fit-content;
+		max-width: -o-fit-content;
+		max-width: fit-content;
+	}
+}
+
+.cta-btn {
+	background-color: $color1;
+	margin: 0;
+}
+
+.ghost-btn {
+	background: transparent;
+	border: 1px solid $white;
+	color: $white;
+}

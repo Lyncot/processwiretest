@@ -1,0 +1,62 @@
+/* Cards Styling */
+
+.cards-bg {
+	background-color: $white;
+	padding: 3rem 0;
+}
+
+.card {
+	position: relative;
+	margin-bottom: 2rem;
+	padding: 2rem;
+	border-radius: 0.3rem;
+	background-color: $white;
+	text-align: center;
+	opacity: 1;
+	box-shadow: 0px 0rem 0.5rem rgba(0,0,0,0.03),
+				0px 2rem 3rem rgba(0,0,0,0.1);
+
+	// &:after {
+	// 	content: " ";
+	// 	filter: blur(2rem);
+	// 	position: absolute;
+	// 	bottom: -5vh;
+	// 	left: 0;
+	// 	right: 0;
+	// 	margin-left: auto;
+	// 	margin-right: auto;
+	// 	border-radius: 200rem;
+	// 	width: 70%;
+	// 	height: 15vh;
+	// 	background-color: #ddd;
+	// 	z-index: -20;
+	// }
+
+	i.fal {
+		font-size: 2.5rem;
+		color: $color1;
+	}
+
+	h3 {
+		font-size: 1.5rem;
+		font-weight: 400;
+		margin: 1rem 0;
+	}
+
+	p {
+		font-size: 1rem;
+		font-weight: 200;
+	}
+
+	@media #{$large-up} {
+		transition: all 500ms ease;
+		margin-top: -10rem;
+
+		&:hover {
+			opacity: 1;
+			margin-top: -12rem;
+			margin-bottom: 0rem;
+			padding: 4rem 2rem;
+		}
+	}
+}

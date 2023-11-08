@@ -1,0 +1,8 @@
+/* Call to Action Styling */
+
+.final-cta {
+	min-height: 10vh;
+	padding: 5rem 0;
+	background: lighten($color-dark, 5%);
+	background: linear-gradient(90deg, $color-dark 0%, lighten($color-dark, 5%) 22%, lighten($color-dark, 5%) 77%, $color-dark 100%);
+}

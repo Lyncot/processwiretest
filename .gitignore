@@ -1,0 +1,16 @@
+node_modules/
+cdist/
+dist/
+database-dump/
+.DS_Store
+storage/cache/
+config.php
+admin/config.php
+image/cache/
+webfonts/*.*
+
+css/style\.css
+
+js/app.min.js
+
+webfonts/

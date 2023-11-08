@@ -1,0 +1,76 @@
+/* Text Styling */
+
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: 0.01rem;
+	margin: 0 0 1rem;
+}
+
+h1 {
+	font-size: 2rem;
+
+	@media #{$large-up} {
+		font-size: 4rem;
+		letter-spacing: 0.05rem;
+		padding: 0;
+		margin: 1rem 0;
+	}
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3.subhead {
+	color: $color1;
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	letter-spacing: 0.35rem
+}
+
+.lilline {
+	position: relative;
+	padding-bottom: 2rem;
+	text-align: center;
+
+	&:after {
+		position: absolute;
+		bottom: 1rem;
+		left: 0px;
+		right: 0px;
+		content: "";
+		margin: 0 auto;
+		width: 5rem;
+		border-bottom: 0.2rem solid $cta-color;	
+	}
+}
+
+p, ul li {
+	color: $textcolor;
+	font-size: 1.05rem;
+	letter-spacing: 0.05rem;
+	line-height: 2rem;
+	font-weight: 300;
+	margin-bottom: 1rem;
+}
+
+p {
+	a {
+		color: $color1;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}

@@ -1,0 +1,29 @@
+// Card Icon Styling
+
+.icon-cards {
+
+	> .cell > div {
+		text-align: center;
+
+		h1, h2, h3, h4, h5 {
+			font-size: 1.8rem;
+			padding: 1rem 0 0 0;
+			text-align: left;
+		}
+
+		p {
+			text-align: left;
+		}
+
+		.fal, .far, .fas {
+			font-size: 4rem;
+			color: lighten($black, 50%);
+		}
+
+		@media #{$large-up} {
+			.fal, .far, .fas {
+				font-size: 3.5vw;
+			}
+		}
+	}
+}

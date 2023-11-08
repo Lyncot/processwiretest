@@ -1,0 +1,53 @@
+/* Slideshow & Carousel Styling */
+
+.am-slick {
+
+	.slick-list, .slick-track, .slick-slide > div, .slick-slide > div > div {
+		height: 100%;
+	}
+
+	button {
+		position: absolute;
+		z-index: 5;
+		top: 0;
+	    border: none;
+	    background: transparent;
+	    cursor: pointer;
+	}
+
+	.slick-prev {
+		left: 10px;
+	}
+
+	.slick-next {
+		right: 10px;
+	}
+}
+
+.slideshow {
+	height: 80vh;
+
+	.slick-slide > div > div {
+		display: block !important;
+	}
+}
+
+.carousel {
+	height: 300px;
+
+	.slick-slide {
+		padding: 0 3rem;
+	}
+
+	button {
+		background: transparentize($white, .1);
+	}
+
+	.slick-prev {
+		left: 0;
+	}
+
+	.slick-next {
+		right: 0;
+	}
+}

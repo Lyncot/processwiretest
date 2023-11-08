@@ -1,0 +1,32 @@
+// Tab Styling
+
+.tabs {
+	@extend %delist;
+	display: flex;
+	flex-wrap: wrap;
+
+	> li {
+		flex: 0 1 auto;
+		> a {
+			display: block;
+			border: 1px solid $line-grey;
+			padding: 1rem 2rem;
+			color: $textcolor;
+
+			&.active {
+				background-color: $selected;
+				color: $selectedtext;
+			}
+		}
+	}
+}
+
+.tabs-content {
+	.tabs-panel {
+		display: none;
+
+		&.open {
+			display: block;
+		}
+	}
+}

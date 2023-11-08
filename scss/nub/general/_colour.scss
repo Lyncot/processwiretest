@@ -1,0 +1,14 @@
+/* Colour Styling */
+
+// Desaturate and lighten images
+.neutralise {
+	filter: grayscale(100%) contrast(10%) brightness(185%);
+}
+
+.neutralise-dark {
+	filter: grayscale(100%) contrast(50%) brightness(130%);
+}
+
+.grey-bg {
+	background: $grey-bg;
+}

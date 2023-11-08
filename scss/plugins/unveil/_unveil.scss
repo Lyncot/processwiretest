@@ -1,0 +1,10 @@
+/* Unveil Lazy Loading Styling */
+
+.lazyload {
+	opacity: 0;
+	transition: opacity 250ms ease-in;
+
+	&.loaded {
+		opacity: 1;
+	}
+}

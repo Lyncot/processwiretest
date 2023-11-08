@@ -1,0 +1,18 @@
+// Sticky Navigation Styles
+
+html {
+	scroll-behavior: smooth;
+}
+
+.trackynav {
+	@extend %delist;
+
+	li {
+		a {
+			&.active {
+				background-color: $color1;
+				color: $white;
+			}
+		}
+	}
+}

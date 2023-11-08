@@ -1,0 +1,17 @@
+/* Topping - Inviting Page Header */
+
+.page-topping {
+	height: 30vh;
+	background-color: $blank-panel;
+	background-size: cover;
+	background-position: center center;
+}
+
+.topping-float {
+	position: relative;
+	display: inline-block;
+	margin-top: -5vh;
+	padding: 2rem 3rem;
+	background-color: $white;
+	opacity: 1;
+}

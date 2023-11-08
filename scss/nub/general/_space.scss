@@ -1,0 +1,73 @@
+// Space Classes
+
+@for $i from 1 through 6 {
+  .padding-#{$i} {
+    padding: #{$i}rem;
+  }
+}
+
+@for $i from 1 through 6 {
+  .padding-w-#{$i} {
+    padding: 0 #{$i}rem;
+  }
+}
+
+@for $i from 1 through 6 {
+  .padding-h-#{$i} {
+    padding: #{$i}rem 0;
+  }
+}
+
+@for $i from 1 through 6 {
+  .padding-top-#{$i} {
+    padding-top: #{$i}rem;
+  }
+}
+
+@for $i from 1 through 6 {
+  .padding-bottom-#{$i} {
+    padding-bottom: #{$i}rem;
+  }
+}
+
+@for $i from 1 through 6 {
+  .margin-#{$i} {
+    margin: #{$i}rem;
+  }
+}
+
+@for $i from 1 through 6 {
+  .margin-w-#{$i} {
+    margin: 0 #{$i}rem;
+  }
+}
+
+@for $i from 1 through 6 {
+  .margin-h-#{$i} {
+    margin: #{$i}rem 0;
+  }
+}
+
+@for $i from 1 through 6 {
+  .margin-top-#{$i} {
+    margin-top: #{$i}rem;
+  }
+}
+
+@for $i from 1 through 6 {
+  .margin-bottom-#{$i} {
+    margin-bottom: #{$i}rem;
+  }
+}
+
+.padding-0 {
+  padding: 0 !important;
+}
+
+.margin-0 {
+  margin: 0 !important;
+}
+
+.spreader {
+  padding: 5rem 0;
+}

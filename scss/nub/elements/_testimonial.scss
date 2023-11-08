@@ -1,0 +1,36 @@
+// Testimonial Element Styling
+
+.testim {
+	.testim-quote {
+		position: relative;
+		padding: 0 4rem;
+
+		&:before, &:after {
+			font-size: 2em;
+			position: absolute;
+		}
+		
+		&:before {
+			@extend %fa-icon;
+			@extend .far;
+			content: fa-content($fa-var-quote-left);
+
+			top: 0px;
+			left: 0px;
+		}
+
+		&:after {
+			@extend %fa-icon;
+			@extend .far;
+			content: fa-content($fa-var-quote-right);
+
+			bottom: 0px;
+			right: 0px;
+		}
+	}
+
+	.testim-name {
+		padding: 0 4rem;
+		font-size: 1.2em;
+	}
+}

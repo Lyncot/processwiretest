@@ -1,0 +1,78 @@
+/* Hero Section Styling */
+
+.hero {
+	min-height: 80vh;
+	position: relative;
+	overflow: hidden;
+
+	.hero-bg {
+		position: absolute;
+		z-index: 0;
+		width: 100%;
+		height: 100%;
+		background: rgb(239,240,241);
+		background: url('../img/backgrounds/device-blur.jpg');
+		background-size: cover;
+		background-position: center center;
+	}
+
+	.vcent {
+		position: absolute;
+		z-index: 20;
+		height: 90%;
+		padding: 0 1rem;
+	    width: 100%;
+	    left: 0;
+
+		@media #{$large-up} {
+			padding: 0;
+			width: initial;
+			left: initial;
+		}
+
+		h1 {
+			color: $black;
+			font-size: 12vw;
+			font-weight: 300;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+			
+			strong {
+				font-weight: 700;
+			}
+
+			@media #{$medium-only} {
+				font-size: 3rem;
+			}
+
+			@media #{$large-up} {
+				font-size: 3.5rem;
+				line-height: 3rem;
+				text-align: left;
+			}
+		}
+
+		p {
+			color: $black;
+			text-align: center;
+			font-size: 1rem;
+			margin: 0.5rem 0;
+
+			@media #{$large-up} {
+				font-size: 1.3rem;
+				line-height: 2.5rem;
+				max-width: 40vw;
+				text-align: left;
+			}
+		}
+
+		.cta-btn {
+			margin: 0;
+
+			@media #{$medium-only} {
+			    margin: 0 auto;
+			}
+		}
+	}
+}

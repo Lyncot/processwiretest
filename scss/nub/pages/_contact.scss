@@ -1,0 +1,7 @@
+// Contact Page Styling
+
+.contact-box {
+	@media #{$large-up} {
+		margin-top: 2rem;
+	}
+}

@@ -1,0 +1,19 @@
+/* Intro Block Styling */
+
+.intro-block {
+	h2 {
+		font-size: 2.5rem;
+		font-weight: 200;
+		-webkit-font-smoothing: antialiased !important;
+
+		@media #{$large-up} {
+			max-width: 40vw;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	h3 {
+		margin: 1rem 0;
+	}
+}

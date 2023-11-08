@@ -1,0 +1,23 @@
+// Square Inner Styling
+
+.squin {
+	.squinner {
+		margin: 0 auto;
+		padding: 2rem;
+
+		@media #{$large-up} {
+			max-width: 40vw;
+		}
+
+		@media #{$xlarge-up} {
+			max-width: 30vw;
+		}
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		max-height: 60vh;
+		object-fit: cover;
+	}
+}
